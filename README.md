@@ -20,4 +20,10 @@ I wanted to tinker with Rust, so this is a good project.
 The static serving/generation and usage of the CDN for other content came to me after 
 [this](https://www.youtube.com/watch?v=mE-DGW0CcAk&t=1786s) talk by Scott Hanselman.
 
+### Other ideas
+
+* instead of generating html from the markdown I could serve the markdown 
+(also interesting for reading my blog without a browser)
+and converting the fetched markdown into html client-sided using WASM (also in rust)
+
 
