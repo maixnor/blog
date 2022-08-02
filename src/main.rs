@@ -3,11 +3,11 @@ use actix_web::{get, web, App, HttpServer, Responder};
 mod functions;
 
 #[get("/hello/{name}")]
-async fn greet_req(name: web::Path<String>) -> impl Responder {    
+async fn greet_req(name: web::Path<String>) -> impl Responder {
     functions::greet(name.to_string())
 }
 
-#[actix_web::main] 
+#[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
@@ -18,4 +18,3 @@ async fn main() -> std::io::Result<()> {
     .run()
     .await
 }
-

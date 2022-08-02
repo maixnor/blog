@@ -1,4 +1,3 @@
-
 pub fn greet(name: String) -> String {
     format!("Hello {name}!")
 }
@@ -14,4 +13,3 @@ mod tests {
         assert_eq!(greeting, "Hello Peter!")
     }
 }
-
