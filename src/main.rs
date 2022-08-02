@@ -1,4 +1,5 @@
 use actix_web::{get, web, App, HttpServer, Responder};
+use actix_files as fs;
 
 mod functions;
 
@@ -13,6 +14,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .route("/hello", web::get().to(|| async { "Hello World!" }))
             .service(greet_req)
+            .service(fs::Files::new("/static", "./content").index_file("index.html"))
     })
     .bind(("127.0.0.1", 8080))?
     .run()
