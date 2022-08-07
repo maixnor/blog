@@ -1,4 +1,9 @@
 
+//! This crate houses all the functional parts of the 
+//! server implementation.
+
+/// This function greets a user by putting "Hello " 
+/// before the name being passed in.
 pub fn greet(name: String) -> String {
     format!("Hello {name}!")
 }
