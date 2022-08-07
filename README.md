@@ -14,6 +14,7 @@ rusts documentation generation might be an alternative, more investigation needs
 * the generated pages will be saved to the filesystem and served from there
 * the actual blog entries will be written in pure markdown
 * any additional content (e.g. pictures) will be saved on a CDN.
+
 ### Motivation
 
 I wanted to tinker with Rust, so this is a good project.
@@ -25,5 +26,14 @@ The static serving/generation and usage of the CDN for other content came to me 
 * instead of generating html from the markdown I could serve the markdown 
 (also interesting for reading my blog without a browser)
 and converting the fetched markdown into html client-sided using WASM (also in rust)
+
+### Rust technicalities
+
+TLDR; `cargo install --locked bacon` into your terminal.
+
+For this project I am using bacon and you should too.
+
+A full description of bacon can be found [here]("https://dystroy.org/bacon/").
+
 
 
