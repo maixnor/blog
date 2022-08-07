@@ -32,7 +32,6 @@ and converting the fetched markdown into html client-sided using WASM (also in r
 TLDR; `cargo install --locked bacon` into your terminal.
 
 For this project I am using bacon and you should too.
-
 A full description of bacon can be found [here]("https://dystroy.org/bacon/").
 
 
