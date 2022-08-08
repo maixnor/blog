@@ -1,5 +1,5 @@
 
-//! This crate houses all the functional parts of the 
+//! This module houses all the functional parts of the 
 //! server implementation.
 
 /// This function greets a user by putting "Hello " 
